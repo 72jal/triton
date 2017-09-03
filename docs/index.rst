@@ -1,6 +1,11 @@
+.. _welcome:
+
 .. toctree::
    :maxdepth: 2
   
+TRITONNET
+=========
+
 
 docs/index.rst
 
