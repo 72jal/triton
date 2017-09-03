@@ -1,8 +1,6 @@
 .. toctree::
-   :caption: Table of Contents
-   :name: mastertoc
-
-   foo
+   :maxdepth: 2
+  
 
 docs/index.rst
 
