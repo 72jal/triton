@@ -5,5 +5,5 @@ Getting Started
 
 Test.
 
-.. Basic Requirements 
-.. Install SURICATA
+. Basic Requirements 
+. Install SURICATA
