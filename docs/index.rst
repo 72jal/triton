@@ -5,7 +5,8 @@ TRITONNET
 
 .. topic:: Getting started
 
-This is a link  `OpenSCAP <https://www.open-scap.org>`_ 
+Getting Started
+---------------
 
 .. toctree::
    :maxdepth: 1
@@ -13,3 +14,6 @@ This is a link  `OpenSCAP <https://www.open-scap.org>`_
    getting_started/index
   
   
+  
+
+.. note:: Send us your request to be updated.``tritonnet+subscribe@googlegroups.com``
