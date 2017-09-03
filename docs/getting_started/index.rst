@@ -1,9 +1,9 @@
 .. _getting_started:
 
-Gettinhg Started
+Getting Started
 ================
 
 Test.
 
-.. topic:: Basic Requirements 
-.. topic:: Install SURICATA
+.. Basic Requirements 
+.. Install SURICATA
