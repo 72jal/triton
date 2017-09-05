@@ -1,6 +1,4 @@
-# tritonnet
-tritonnet
-
+# triton
 
 SURICATA - LOGSTASH - ELASTICSEARCH - KIBANA
 ============================================
