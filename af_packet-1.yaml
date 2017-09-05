@@ -1,0 +1,9 @@
+%YAML 1.1
+---
+
+
+# Linux high speed capture support
+af-packet:
+  - interface: ens33
+    threads: auto
+    cluster-id: 99
