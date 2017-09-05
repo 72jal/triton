@@ -1,5 +1,9 @@
 #!/bin/bash
 apt-get update
+#apt-get install ssh 
+#apt-get install sudo
+#apt-get install vim
+#echo 'jose    ALL=(ALL:ALL) ALL' >> /etc/sudoers
 
 apt-get -y install dirmngr
 apt-get -y install ca-certificates
@@ -12,6 +16,20 @@ apt-get -y install suricata
 systemctl daemon-reload
 systemctl enable suricata.service
 systemctl start suricata.service
+
+#apt-get -y install libpcre3 libpcre3-dbg libpcre3-dev \
+#build-essential autoconf automake libtool libpcap-dev libnet1-dev \
+#libyaml-0-2 libyaml-dev zlib1g zlib1g-dev libmagic-dev libcap-ng-dev \
+#libjansson-dev pkg-config
+
+#wget http://www.openinfosecfoundation.org/download/suricata-3.1.tar.gz
+#tar -xvzf suricata-3.1.tar.gz
+#cd suricata-3.1
+#./configure && make && make install-full
+# 
+
+#sudo LD_LIBRARY_PATH=/usr/local/lib /usr/local/bin/suricata -c /usr/local/etc/suricata//suricata.yaml -i ens33
+
 
 # JRE installation 
 
@@ -49,3 +67,16 @@ apt-get -y install kibana
 systemctl daemon-reload
 systemctl enable kibana.service
 systemctl start kibana.service
+
+
+# Configuration files
+# Suricata 
+mv /etc/suricata/suricata.yaml /etc/suricata/suricata.yaml.ori2
+curl -so /etc/suricata/suricata.yaml https://raw.githubusercontent.com/72nomada/tritonnet/master/conf/suricata.yaml
+curl -so /etc/suricata/af_packet-1.yaml https://raw.githubusercontent.com/72nomada/tritonnet/master/conf/af_packet-1.yaml
+chmod 644 /var/log/suricata/*.log
+
+# Kibana
+mv /etc/kibana/kibana.yml /etc/kibana/kibana.yml.ori
+curl -so /etc/kibana/kibana.yml https://raw.githubusercontent.com/72nomada/tritonnet/master/conf/kibana.yml
+
