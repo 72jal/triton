@@ -13,7 +13,7 @@ systemctl daemon-reload
 systemctl enable suricata.service
 systemctl start suricata.service
 
-# JRE installation 
+# JRE installation
 
 # Oracle License Agreement accepted by default
 echo "oracle-java8-installer shared/accepted-oracle-license-v1-1 seen true" | sudo debconf-set-selections
@@ -25,6 +25,7 @@ apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys EEA14886
 
 apt-get update
 apt-get -y install oracle-java8-installer
+# Test
 
 # L-E-K 
 
@@ -52,7 +53,7 @@ systemctl start kibana.service
 
 
 # Configuration files
-# Suricata 
+# Suricata
 mv /etc/suricata/suricata.yaml /etc/suricata/suricata.yaml.ori2
 curl -so /etc/suricata/suricata.yaml https://raw.githubusercontent.com/72nomada/tritonnet/master/conf/suricata.yaml
 curl -so /etc/suricata/af_packet-1.yaml https://raw.githubusercontent.com/72nomada/tritonnet/master/conf/af_packet-1.yaml
