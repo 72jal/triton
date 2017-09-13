@@ -66,3 +66,4 @@ curl -so /etc/logstash/conf.d/logstash.conf https://raw.githubusercontent.com/72
 # Kibana
 mv /etc/kibana/kibana.yml /etc/kibana/kibana.yml.ori
 curl -so /etc/kibana/kibana.yml https://raw.githubusercontent.com/72nomada/tritonnet/master/conf/kibana.yml
+systemctl restart kibana.service
