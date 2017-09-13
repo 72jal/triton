@@ -41,6 +41,7 @@ systemctl start elasticsearch.service
 
 apt-get -y install logstash
 
+chown logstash:logstash /var/log/suricata/eve.json
 systemctl daemon-reload
 systemctl enable logstash.service
 systemctl start logstash.service
